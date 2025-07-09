@@ -1,7 +1,7 @@
-const express = require('express');
-const { nanoid } = require('nanoid');
-const { isValidUrl } = require('../utils/helpers');
-const store = require('../data/store');
+import express from 'express';
+import { nanoid } from 'nanoid';
+import { isValidUrl } from '../utils/helpers.js';
+import store from '../data/store.js';
 
 const router = express.Router();
 
@@ -36,4 +36,4 @@ router.get('/stats/:code', (req, res) => {
   res.json(entry);
 });
 
-module.exports = router;
+export default router;
