@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>🚀 URL Shortener</h1>
+
+  <form id="url-form">
+    <input type="url" id="longUrl" placeholder="Enter Long URL" required>
+    <input type="text" id="customCode" placeholder="Custom short code (optional)">
+    <button type="submit">Shorten</button>
+  </form>
+
+  <div id="result"></div>
+  <div id="stats"></div>
+  <canvas id="chart" width="600"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
